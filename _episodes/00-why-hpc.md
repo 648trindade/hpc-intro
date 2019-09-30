@@ -84,7 +84,7 @@ Aprender a usar o Bash ou qualquer outro shell às vezes parece mais com a progr
 > ## Você interage com sistemas HPC através de uma interface de linha de comando
 > A maior parte da interação com os sistemas HPC é por meio de uma interface de linha de comando, geralmente o
 > shell bash.
-{: .Chamar}
+{: .callout}
 
 
 ## O restante desta lição
