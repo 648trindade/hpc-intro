@@ -15,59 +15,42 @@ keypoints:
 - "HPC tipicamente envolve se conectar a enormes sistemas de computação em qualquer lugar pelo mundo."
 ---
 
-## Why Use These Computers?
+## Por que usar esses computadores?
 
-> ## What do you need?  
+> ## O que você precisa?  
 >
-> Talk to your neighbor about your research.  How does computing
-> help you do your research?  How could more computing help you
-> do more or better research?  
+> Fale com um colega sobre sua pesquisa. 
+> Como a computação ajuda sua pesquisa? 
+> Como mais computação pode te ajudar a fazer mais ou melhores pesquisas?  
 >
-> Summarise your discussion in 2-3 sentances.
+> Resuma sua conversa em 2-3 frases.
 > 
-> This discussion should take about 5 minutes
+> Essa conversa deve levar em torno de 5 minutos
 {: .challenge}
 
-Frequently, research problems that use computing can outgrow the desktop
-or laptop computer where they started:
+Frequentemente, problemas de pesquisa que usam computação podem tornar o desktop ou laptop insuficientes a partir de diversos pontos:
 
-* A statistics student wants to do cross-validate their model.  This involves
-running the model 1000 times -- but each run takes an hour.  Running on their
-laptop will take over a month!
+* Um estudante de estatística deseja realizar uma validação cruzada em seu modelo. Isso envolve executar o modelo 1000 vezes -- mas cada execução leva uma hora. A execução em seu laptop levará mais de um mês!
 
-* A genomics researcher has been using small datasets of sequence data, but
-soon will be receiving a new type of sequencing data that is 10 times as large.
-It's already challenging to open the datasets on their computer -- analyzing
-these larger datasets will probably crash it.
+* Um pesquisador de genômica está usando pequenos conjuntos de dados de dados de sequência, mas em breve receberá um novo tipo de dados de seqüenciamento 10 vezes maior. Já é um desafio abrir os conjuntos de dados em seu computador -- a análise desses conjuntos de dados maiores provavelmente o travará.
 
-* An engineer is using a fluid dynamics package that has an option to run
-in parallel.  So far, they haven't used this option on their desktop, but in
-going from 2D to 3D simulations, simulation time has more than tripled and it
-might be useful to take advantage of that feature.  
+* Um engenheiro está usando um pacote de dinâmica de fluidos que tem uma opção para executar em paralelo. Até o momento, ele não usou essa opção em seu desktop, mas, passando de simulações 2D para 3D, o tempo de simulação mais do que triplicou e pode ser útil tirar proveito desse recurso.  
 
-In all these cases, what is needed is access to more computers than can be
-used at the same time.  Luckily, large scale computing systems -- shared computing
-resources with lots of computers -- are available at many universities, labs,
-or through national networks.  These resources usually have
-more processors, that operate at higher speeds, more memory, more storage, and
-faster connections with other computer systems.  They are often interchangably called
-"clusters", "supercomputers" or resources for "high performance computing" or
-HPC.  In this lesson, we will usually use the terminology HPC but it is useful 
-to define these terms a little bit more in case you come across them in future.
+Em todos esses casos, o que é necessário é o acesso a mais computadores que podem ser usados ao mesmo tempo. Felizmente, sistemas de computação em larga escala -- recursos de computação compartilhados com muitos computadores -- estão disponíveis em muitas universidades, laboratórios ou através de redes nacionais. Esses recursos geralmente têm mais processadores, que operam em velocidades mais altas, mais memória, mais armazenamento e conexões mais rápidas com outros sistemas de computador. Eles geralmente são chamados de "clusters", "supercomputadores" ou recursos para "computação de alto desempenho" ou HPC. Nesta lição, geralmente usaremos a terminologia HPC, mas é útil definir esses termos um pouco mais, caso você os encontre no futuro.
 
-* **High Performance Computing (HPC).** Computing resources that allow people to solve their problems faster or treat larger problems than they would be able to using standard computing resources (e.g. a laptop, desktop or workstation). Usually implies some sort of *parallel computing*.
-* **Parallel Computing.** The use of computing resources in parallel to speed up computation or treat larger computational problems.
-* **Supercomputer.** Typically used to describe a very large HPC resource such as those found on the [Top500](http://www.top500.org) list. Often uses the same technology as *compute clusters* but at a larger scale.
-* **Compute Cluster.** Typically used to describe a smaller HPC resource than those referred to as *supercomputers*. Usually use exactly the same technology as supercomputers but on a smaller scale.
-* **High Throughput Computing (HTC).** A subset of parallel computing where computing resources are used in parallel on many independent sub-tasks to increase the rate at which computation can be performed. For example, varying an imput parameter (or input data) to a computation and running many copies simultaneously.
-* **Cloud Computing.** Using remote computing resources *on demand*. Often associated with using public cloud computing resources provided by large internet corporations.
+* **Computação de Alto Desempenho (HPC).** Recursos de computação que permitem às pessoas resolverem seus problemas mais rapidamente ou tratarem problemas maiores do que seriam capazes usando recursos de computação padrão (por exemplo, laptop, desktop ou workstation). Geralmente implica algum tipo de *computação paralela*.
+* **Computação Paralela.** The use of computing resources in parallel to speed up computation or treat larger computational problems.
+* **Supercomputador.** Normalmente usado para descrever um recurso HPC muito grande, como os encontrados na lista [Top500](http://www.top500.org). Geralmente, usa a mesma tecnologia que *clusters de computação*, mas em uma escala maior.
+* **Clusters de Computação.** Normalmente usado para descrever um recurso HPC menor do que aqueles referidos como *supercomputadores*. Geralmente usa exatamente a mesma tecnologia dos supercomputadores, mas em uma escala menor.
+* **_High Throughput Computing_ (HTC).** Um subconjunto da computação paralela em que os recursos de computação são usados em paralelo em muitas subtarefas independentes para aumentar a taxa na qual a computação pode ser executada. Por exemplo, variando um parâmetro de entrada (ou dados de entrada) para um cálculo e executando muitas cópias simultaneamente.
+* **Computação em Nuvem.** Usando recursos de computação remota *sob demanda*. Geralmente associado ao uso de recursos públicos de computação em nuvem fornecidos por grandes corporações da Internet.
 
-All of the topics covered in this lesson will be useful no matter which type of resource you are planning to use and in which way. 
+Todos os tópicos abordados nesta lição serão úteis, independentemente do tipo de recurso que você planeja usar e de que maneira. 
 
-> ## HPC is parallel computing
-> Although HPC systems often have slightly more powerful processors, more memory and
-> more storage the real additional power comes from using the resources in parallel
-> rather than in serial.
+> ## HPC é computação paralela
+> Embora os sistemas HPC geralmente tenham processadores um pouco mais poderosos, 
+> mais memória e mais armazenamento, o poder adicional real vem do uso dos recursos em paralelo, 
+> e não em série.
 {: .callout}
 
 Using an HPC system often has the following advantages for researchers:
