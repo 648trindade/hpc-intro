@@ -1,15 +1,15 @@
 ---
 title: "Por que usar Computação de Alto Desempenho?"
-duração: 20
-exercícios: 10
+teaching: 20
+exercises: 10
 start: true
-questões:
+questions:
 - "Por que eu deveria me interessar por Computação de Alto Desempenho (HPC)?"
 - "O que eu posso esperar aprender com este curso?"
-objetivos:
+objectives:
 - "Estar habilitado a descrever para que sistemas HPC são comumente usados"
 - "Identificar como um sistema HPC pode acabar te beneficiando."  
-pontos-chave:
+keypoints:
 - "Computação de Alto Desempenho (HPC) é uma ferramenta para calcular mais dados e/ou mais rápido do que é possível no teu computador."
 - "HPC se baseia na utilização de paralelismo para prover melhorias de desempenho."
 - "HPC tipicamente envolve se conectar a enormes sistemas de computação em qualquer lugar pelo mundo."
