@@ -53,94 +53,55 @@ Todos os tópicos abordados nesta lição serão úteis, independentemente do ti
 > e não em série.
 {: .callout}
 
-Using an HPC system often has the following advantages for researchers:
+O uso de um sistema HPC geralmente oferece as seguintes vantagens para os pesquisadores:
 
-* **Speed.** With many more processing cores, often with higher performance specs,
-  than a typical laptop or desktop, HPC systems can offer significant speed up.
-* **Volume.** Many HPC systems have both the processing memory (RAM) and disk
-  storage to handle very large amounts of data. Terabytes of RAM and
-  petabytes of storage are available for research projects.
-* **Efficiency.** Many HPC systems operate a pool of resources that are drawn
-  on by a many users.  In most cases when the pool is large and diverse enough
-  the resources on the system are used almost constantly.
-* **Cost.** Bulk purchasing and government funding mean that the cost to the
-  research community for using these systems in significantly less that it
-  would be otherwise.
-* **Convenience.** Maybe your calculations just take a long time to run or are
-  otherwise inconvenient to run on your personal computer. There's no need to
-  tie up your own computer for hours when you can use someone else's instead.
+* **Velocidade.** Com muito mais núcleos de processamento, geralmente com especificações de desempenho mais alto, do que um laptop ou desktop típico, os sistemas HPC podem oferecer uma velocidade significativa.
+* **Volume.** Muitos sistemas HPC têm memória de processamento (RAM) e armazenamento em disco para lidar com grandes quantidades de dados. Terabytes de RAM e petabytes de armazenamento estão disponíveis para projetos de pesquisa.
+* **Eficiência.** Muitos sistemas HPC operam um conjunto de recursos que são atraídos por muitos usuários. Na maioria dos casos, quando o pool é grande e diversificado o suficiente, os recursos no sistema são usados ​​quase constantemente.
+* **Custo.** A compra em massa e o financiamento do governo significam que o custo para a comunidade de pesquisa pelo uso desses sistemas é significativamente menor do que seria de outra forma.
+* **Conveniência.** Talvez seus cálculos demorem muito tempo para serem executados ou sejam inconvenientes para serem executados no seu computador pessoal. Não há necessidade de amarrar seu próprio computador por horas, quando você pode usar o de outra pessoa.
 
-> ## Thinking ahead
+> ## Pensando no futuro
 >
-> How do you think using a large-scale computing system will be different
-> from using your laptop? Talk to your neighbor about some
-> differences you may already know about, and some
-> differences/difficulties you imagine you may run into.
+> Como você acha que usar um sistema de computação em larga escala será diferente
+> de usar seu laptop? Converse com seu vizinho sobre algumas
+> diferenças que você já conhece, e algumas
+> diferenças/dificuldades que você imagina poder encontrar.
 >
-> Summarise your discussion in 2-3 sentances.
-> 
-> This discussion should take about 5 minutes
+> Resuma sua conversa em 2 a 3 frases.
+>
+> Essa discussão deve levar cerca de 5 minutos
 {: .challenge}
 
-## On Command Line
+## Na linha de comando
 
-Using HPC systems often involves the use of a shell through a command line
-interface (CLI) and either specialized software or programming techniques.  The
-shell is a program with the special role of having the job of running other
-programs rather than doing calculations or similar tasks itself.  What the user
-types goes into the shell, which then figures out what commands to run and
-orders the computer to execute them.  (Note that the shell is called "the
-shell" because it encloses the operating system in order to hide some of its
-complexity and make it simpler to interact with.)  The most popular Unix shell
-is Bash, the Bourne Again SHell (so-called because it's derived from a shell
-written by Stephen Bourne).  Bash is the default shell on most modern
-implementations of Unix and in most packages that provide Unix-like tools for
-Windows.
+O uso de sistemas HPC geralmente envolve o uso de um shell por meio de uma interface de linha de comando (CLI) e software especializado ou técnicas de programação. O shell é um programa com o papel especial de executar outros programas, em vez de fazer cálculos ou tarefas semelhantes. O que o usuário digita entra no shell, que descobre quais comandos executar e ordena que o computador os execute. (Observe que o shell é chamado "o shell" porque encerra o sistema operacional para ocultar parte de sua complexidade e facilitar a interação.) O shell Unix mais popular é o Bash, o Bourne Again SHell (o chamado porque é derivado de um shell escrito por Stephen Bourne). O Bash é o shell padrão nas implementações mais modernas do Unix e na maioria dos pacotes que fornecem ferramentas semelhantes ao Unix para Windows.
 
-Interacting with the shell is done via a command line interface (CLI) on most
-HPC systems.  In the earliest days of computers, the only way to interact with
-early computers was to rewire them.  From the 1950s to the 1980s most people
-used line printers.  These devices only allowed input and output of the
-letters, numbers, and punctuation found on a standard keyboard, so programming
-languages and software interfaces had to be designed around that constraint and
-text-based interfaces were the way to do this.  Typing-based interfaces are
-often called a **command-line interface**, or CLI, to distinguish it from a
-**graphical user interface**, or GUI, which most people now use.  The heart of
-a CLI is a **read-evaluate-print loop**, or REPL: when the user types a command
-and then presses the Enter (or Return) key, the computer reads it, executes it,
-and prints its output.  The user then types another command, and so on until
-the user logs off.
+A interação com o shell é feita por meio de uma interface de linha de comando (CLI) na maioria dos sistemas HPC. Nos primeiros dias dos computadores, a única maneira de interagir com os computadores antigos era reconectá-los. Entre os anos 50 e 80, a maioria das pessoas usava impressoras de linha. Esses dispositivos permitiam apenas a entrada e saída de letras, números e pontuação encontrados em um teclado padrão; portanto, as linguagens de programação e as interfaces de software precisavam ser projetadas com base nas restrições e nas interfaces baseadas em texto. As interfaces baseadas em digitação são frequentemente chamadas de **interface da linha de comandos**, ou CLI, para diferenciá-la de uma **interface gráfica do usuário**, ou GUI, que a maioria das pessoas usa agora. O coração de uma CLI é uma **repetição de leitura-avaliação-impressão** ou REPL: quando o usuário digita um comando e pressiona a tecla Enter (ou Return), o computador lê, executa e imprime sua saída. O usuário digita outro comando e assim sucessivamente até que o usuário efetue logoff.
 
-Learning to use Bash or any other shell sometimes feels more like programming
-than like using a mouse.  Commands are terse (often only a couple of characters
-long), their names are frequently cryptic, and their output is lines of text
-rather than something visual like a graph.  However, using a command line
-interface can be extremely powerful, and learning how to use one will allow
-you to reap the benefits described above.  
+Aprender a usar o Bash ou qualquer outro shell às vezes parece mais com a programação do que com o mouse. Os comandos são concisos (geralmente com apenas alguns caracteres), seus nomes são frequentemente enigmáticos e sua saída são linhas de texto, em vez de algo visual como um gráfico. No entanto, o uso de uma interface de linha de comando pode ser extremamente poderoso, e aprender a usar uma permitirá que você colha os benefícios descritos acima.
 
-> ## You interact with HPC systems through a command line interface
-> Most interaction with HPC systems is through a command line interface, usually the
-> bash shell.
-{: .callout}
+> ## Você interage com sistemas HPC através de uma interface de linha de comando
+> A maior parte da interação com os sistemas HPC é por meio de uma interface de linha de comando, geralmente o
+> shell bash.
+{: .Chamar}
 
 
-## The rest of this lesson
+## O restante desta lição
 
-The rest of this lesson will cover the following topics
+O restante desta lição abordará os seguintes tópicos
 
-* We will learn how HPC systems are put together and what this means for you, as an HPC user.
-* We will learn how to access a remote HPC system from the bash command line interface and transfer 
-  data to and from the remote system.
-* We will learn how to use the scheduler on the system to get our calculations up and running on the
-  HPC systems.
-* We will learn how to access software installed on the HPC system using environment modules.
-* We will learn about how parallelism enables larger, faster computation using HPC systems.
-* We will learn how we can improve the efficiency of our use of HPC systems.
-* We will learn what the future holds for HPC and what this might mean for your use of HPC.
+* Aprenderemos como os sistemas HPC são montados e o que isso significa para você, como usuário de HPC.
+* Aprenderemos como acessar um sistema HPC remoto a partir da interface da linha de comando do bash e transferir dados de e para o sistema remoto.
+* Aprenderemos como usar o agendador no sistema para colocar nossos cálculos em funcionamento nos sistemas HPC.
+* Aprenderemos como acessar o software instalado no sistema HPC usando módulos de ambiente.
+* Aprenderemos sobre como o paralelismo permite uma computação maior e mais rápida usando sistemas HPC.
+* Aprenderemos como podemos melhorar a eficiência do uso de sistemas HPC.
+* Aprenderemos o que o futuro reserva para o HPC e o que isso pode significar para o seu uso.
 
-The skills we learn here have other uses beyond just HPC -
-Bash and remote connection skills are used everywhere, be it for web development, running software, or operating servers.
-It's become so essential that Microsoft
-[now ships it as part of Windows](https://www.microsoft.com/en-us/store/p/ubuntu/9nblggh4msv6)!
-Knowing how to use Bash and HPC systems will allow you to operate virtually any modern device.
-With all of this in mind, let's get started!
+As habilidades que aprendemos aqui têm outros usos além do HPC -
+As habilidades com bash e de conexão remota são usadas em todos os lugares, seja para desenvolvimento na web, execução de software ou servidores operacionais.
+Tornou-se tão essencial que a Microsoft
+[agora o entrega como parte do Windows](https://www.microsoft.com/en-us/store/p/ubuntu/9nblggh4msv6)!
+Saber como usar os sistemas Bash e HPC permitirá operar praticamente qualquer dispositivo moderno.
+Com tudo isso em mente, vamos começar!
