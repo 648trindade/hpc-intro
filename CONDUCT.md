@@ -1,6 +1,6 @@
 ---
 layout: page
-title: "Contributor Code of Conduct"
+title: "Código de Conduta do Contribuidor"
 permalink: /conduct/
 ---
 Como colaboradores e mantenedores deste projeto, comprometemo-nos a respeitar todas as pessoas que contribuam relatando problemas, publicando solicitações de recursos, atualizando documentação, enviando solicitações ou _pull requests_ e outras atividades.
