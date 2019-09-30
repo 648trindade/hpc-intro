@@ -64,7 +64,7 @@ O uso de um sistema HPC geralmente oferece as seguintes vantagens para os pesqui
 > ## Pensando no futuro
 >
 > Como você acha que usar um sistema de computação em larga escala será diferente
-> de usar seu laptop? Converse com seu vizinho sobre algumas
+> de usar seu laptop? Converse com seu colega sobre algumas
 > diferenças que você já conhece, e algumas
 > diferenças/dificuldades que você imagina poder encontrar.
 >
